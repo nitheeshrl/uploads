@@ -118,8 +118,8 @@ server.listen(PORT, () => {
 server.post("/upload", (req, res) => {
  // const { password } = req.body;
 //const { salt } = req.body;
- //console.log(req)
- var id =  uploadFile('file');
+ console.log(req.file)
+ var id =  uploadFile(req.file);
    console.log(id)
        res.json(id);
 
