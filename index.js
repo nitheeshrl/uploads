@@ -48,7 +48,7 @@ though this can be any filePath
 const filePath = path.join(__dirname, 'Base_2-1 2.pdf');
 //var file = path.basename(filePath);
 //console.log(fs.createReadStream(filePath))
-async function uploadFile() {
+async function uploadFile(file) {
   try {
     const response = await drive.files.create({
       requestBody: {
