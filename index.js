@@ -114,7 +114,7 @@ async function generatePublicUrl() {
 server.listen(PORT, () => {
   console.log(`Express server running at http://localhost:${PORT}/`);
 });
-server.post("/upload",uploadFile('file'), async (req, res) => {
+server.post("/upload",uploadFile('file'), (req, res) => {
  // const { password } = req.body;
 //const { salt } = req.body;
  //console.log(req)
