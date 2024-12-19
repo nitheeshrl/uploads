@@ -120,6 +120,7 @@ server.post("/upload", (req, res) => {
 //const { salt } = req.body;
  //console.log(req)
  var id =  uploadFile('file');
+   console.log(id)
        res.json(id);
 
  })
