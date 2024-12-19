@@ -14,6 +14,7 @@ const express = require('express');
 const PORT = 3000;
 const server = express()
 const cors=require("cors");
+const multer=require("multer");
 const corsOptions ={
    origin:'*', 
    credentials:true,            //access-control-allow-credentials:true
