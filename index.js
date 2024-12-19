@@ -52,13 +52,13 @@ async function uploadFile(file) {
   try {
     const response = await drive.files.create({
       requestBody: {
-        name: file,
+        name: path.basename(file),
        //This can be name of your choice
 
       },
       media: {
 
-        body: fs.createReadStream(filePath),
+        body: fs.createReadStream(file),
     
       },
     
