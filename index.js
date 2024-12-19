@@ -127,7 +127,7 @@ const storage = multer.diskStorage({
 })
 const upload = multer({ storage: storage })
 
-server.post("/upload", upload single("profileImage"),(req, res) => {
+server.post("/upload", upload.single("profileImage"),(req, res) => {
  // const { password } = req.body;
 //const { salt } = req.body;
  console.log(req.file)
