@@ -65,6 +65,7 @@ async function uploadFile(file) {
     });
 
     console.log(response.data);
+     return response.data;
   } catch (error) {
     console.log(error.message);
   }
@@ -118,7 +119,7 @@ server.post("/upload", (req, res) => {
  // const { password } = req.body;
 //const { salt } = req.body;
  //console.log(req)
-   uploadFile('file')
- ;
+ var id =  uploadFile('file');
+       res.json(id);
 
  })
