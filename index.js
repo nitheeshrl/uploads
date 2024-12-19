@@ -118,6 +118,6 @@ server.post("/upload", async (req, res) => {
  // const { password } = req.body;
 //const { salt } = req.body;
 // console.log(req)
- uploadFile(req);
+ uploadFile(req.body);
 
  })
